@@ -1,6 +1,7 @@
 def print_letter(let):
-    print(let, end='' )
-    
+    print(let, end='')
+
+
 print_letter('С')
 print_letter('Т')
 print_letter('У')

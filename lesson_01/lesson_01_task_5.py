@@ -1,6 +1,7 @@
 def num(let):
-    print(let, end='' )
-    
+    print(let, end='')
+
+
 num(8)
 num(8)
 num(0)
