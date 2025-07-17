@@ -7,4 +7,4 @@ class Mailing:
         self.track = track
 
     def myLetter(self):
-        print(f"Отправление {self.track} из {self.from_address} в {self.to_address}."f"Стоимость {self.cost} рублей.")
+        print (f"Отправление {self.track} из {self.from_address} в {self.to_address}. "f"Стоимость {self.cost} рублей.")

@@ -14,4 +14,4 @@ class User:
         print(f"{self.first_name} {self.last_name}")
 
 
-user1 = User("Sonya", "Trubitsina")
+user = User("Sonya", "Trubitsina")

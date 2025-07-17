@@ -1,6 +1,6 @@
 from user import User
 
-my_user = User("Sonya", "Trubitsina")
-my_user.myName()
-my_user.myLastName()
-my_user.myFullName()
+my_user1 = User("Sonya", "Trubitsina")
+my_user1.myName()
+my_user1.myLastName()
+my_user1.myFullName()
