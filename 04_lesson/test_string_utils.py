@@ -31,25 +31,25 @@ def test_capitalize_negative(input_str, expected):
 
 # Функция trim
 @pytest.mark.parametrize(
-        "input_str, expected",
-        [
-            (" test", "test"),
-            ("   test", "test"),
-        ]
-    )
+    "input_str, expected",
+    [
+        (" test", "test"),
+        ("   test", "test"),
+    ]
+)
 def test_trim_positive(input_str, expected):
     string_utils = StringUtils()
     assert string_utils.trim(input_str) == expected
 
 
 @pytest.mark.parametrize(
-            "input_str, expected",
-            [
-                ("test", "test"),
-                ("  ", " "),
-                ("", ""),
-            ]
-        )
+    "input_str, expected",
+    [
+        ("test", "test"),
+        ("  ", " "),
+        ("", ""),
+    ]
+)
 def test_trim_negative(input_str, expected):
     string_utils = StringUtils()
     assert string_utils.trim(input_str) == expected
@@ -68,7 +68,8 @@ def test_contains_positive(input_str, symbol, expected):
     string_utils = StringUtils()
     assert string_utils.contains(input_str, symbol) == expected
 
-#Используются разные раскладки для input_str и symbol
+
+# Используются разные раскладки для input_str и symbol
 @pytest.mark.parametrize(
     "input_str, symbol, expected",
     [
