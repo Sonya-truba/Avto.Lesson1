@@ -18,7 +18,7 @@ def test_capitalize_positive(input_str, expected):
 
 
 @pytest.mark.parametrize(
-    "input_str", "expected",
+    "input_str, expected",
     [
         ('  ', '  '),
         ('', ''),
