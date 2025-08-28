@@ -12,13 +12,14 @@ driver.maximize_window()
 driver.find_element(By.CSS_SELECTOR, "input#user-name").send_keys("standard_user")
 driver.find_element(By.CSS_SELECTOR, "input#password").send_keys("secret_sauce")
 driver.find_element(By.CSS_SELECTOR, "input#login-button").click()
+driver.execute_script("document.body.style.zoom='25%'")
 # Покупки
 WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.CSS_SELECTOR, "button#add-to-cart-sauce-labs-backpack"))
 )
 driver.find_element(By.CSS_SELECTOR, "button#add-to-cart-sauce-labs-backpack").click()
 driver.find_element(By.CSS_SELECTOR, "button#add-to-cart-sauce-labs-bolt-t-shirt").click()
-driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+driver.find_element(By.CSS_SELECTOR, "button#add-to-cart-sauce-labs-onesie").click()
 driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
 WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.CSS_SELECTOR, "button#checkout"))
@@ -39,3 +40,4 @@ def test_saucedemo():
     total = driver.find_element(By.CLASS_NAME, "summary_total_label").text
     print(total)
     assert total == "Total: $58.29"
+    driver.quit()

@@ -30,3 +30,4 @@ def test_slow_calculator():
     end_time = time.time()
     load_time = end_time-start_time
     assert 43 <= load_time <= 47
+    driver.quit()
